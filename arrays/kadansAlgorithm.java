@@ -10,7 +10,6 @@ public class kadansAlgorithm {
                 sum=0;
             }
             maxSum = Math.max(maxSum,sum);
-            maxSum = Math.max(sum, maxSum);
         }
         System.out.println(maxSum);
     }
