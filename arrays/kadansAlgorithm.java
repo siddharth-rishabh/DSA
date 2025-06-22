@@ -6,6 +6,7 @@ public class kadansAlgorithm {
         int sum=0, maxSum=Integer.MIN_VALUE;
         for(int i=0; i<numbers.length; i++){
             sum= sum+numbers[i];
+            
             if(sum<0){
                 sum=0;
             }
