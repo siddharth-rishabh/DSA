@@ -1,22 +1,24 @@
 import java.util.*;
 
 public class firstElementOccuredTwice {
-    int arr[]= {2, 5, 1, 2, 3, 5};
-    HashMap<Integer, Integer> map = new HashMap<>();
-
+    int arr[] = { 5, 5, 2, 1, 2, 3 };
+    
+    HashSet<Integer> set = new HashSet<>();
     public firstElementOccuredTwice(){
         for(int num: arr){
-           map.put(num, map.getOrDefault(num, 0)+1);
+          if(set.contains(num)) {
+            System.out.println("First Repated no :- " + num);
+            return;
+          } else{
+            set.add(num);
+          }
+          
         };
-        for(Map.Entry<Integer, Integer> entry: map.entrySet()){
-            if(entry.getValue() >= 2){
-                System.out.println(entry.getKey());
-            }
-        }
+        System.out.println("No Number is repeated twice");
     };
 
-    public static void main(String [] args){
+    public static void main(String[] args) {
         new firstElementOccuredTwice();
-    }
-    
+    };
+
 }
