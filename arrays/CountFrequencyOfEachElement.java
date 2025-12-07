@@ -15,7 +15,7 @@ public class CountFrequencyOfEachElement {
     for(
     Map.Entry<Integer, Integer> entry:map.entrySet())
     {
-        System.out.println("Number " + entry.getKey() + " repeats " + entry.getValue() + " times");
+        System.out.println(entry.getKey() + " repeats " + entry.getValue() + " times");
     }
 
 }     
